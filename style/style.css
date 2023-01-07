@@ -78,8 +78,8 @@ a {
 /* header style  */
 header {
   height: 830px;
-  background-image: url("/images/hardy.png"), url("/images/header_bg.png"),
-    url("/images/developer.png");
+  background-image: url("../images/hardy.png"), url("../images/header_bg.png"),
+    url("../images/developer.png");
   background-repeat: no-repeat;
   background-position: right bottom, right bottom, left center;
   margin-bottom: 130px;
@@ -158,8 +158,6 @@ nav .links ul li a {
   padding: 130px 155px;
 
   margin-bottom: 130px;
-}
-.about-me .about-info {
 }
 
 .about-me .about-info > ul {
