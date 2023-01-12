@@ -100,6 +100,7 @@ nav .logo {
 }
 nav .links ul {
   display: flex;
+  align-items: center;
 }
 nav .links ul li {
   list-style: none;
@@ -119,6 +120,7 @@ nav .links ul li:hover:last-child {
 nav .links ul li a {
   text-decoration: none;
 }
+
 .header-text-box {
   text-align: left;
   margin-top: 180px;
@@ -310,4 +312,184 @@ textarea {
 }
 footer .footer form > button {
   max-width: fit-content;
+}
+
+/* responsove for Extra small devices  */
+@media screen and (max-width: 575.9px) {
+  .container {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .primery-button,
+  .secondry-button {
+    padding: 9px 18px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  header {
+    background-image: none;
+    height: auto;
+  }
+  nav {
+    padding: 5% 0;
+    align-items: flex-start;
+  }
+  nav .links ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .links ul li {
+    margin: 5px 0;
+    padding: 0;
+  }
+  .header-text-box {
+    margin-top: 25px;
+  }
+  .header-text-box > h2 {
+    font-size: 35px;
+  }
+  .header-text-box > h2 > span {
+    font-size: 75px;
+  }
+  .header-text-box > .header-text {
+    width: 100%;
+  }
+  .about-me {
+    padding: 5%;
+    margin-bottom: 50px;
+  }
+  .about-me .about-info > ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .skils {
+    margin-bottom: 50px;
+  }
+  .skils .skil-card-container {
+    flex-direction: column;
+  }
+  .skils .skil-card-container .skil-card {
+    border: 1px solid skyblue;
+    border-radius: 8px;
+  }
+  .resume-container {
+    flex-direction: column;
+  }
+  .resume-container .sub-tittle {
+    text-align: center;
+    border-bottom: 2px dashed skyblue;
+    padding-bottom: 5px;
+  }
+  footer {
+    padding: 50px 0;
+  }
+  footer .footer {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  footer .footer .footer-left,
+  .footer-right {
+    max-width: 100%;
+  }
+}
+
+/* responsive for small devices  */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 5%;
+  }
+  header {
+    height: 750px;
+    background-image: url(../images/hardy.png), url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom, right bottom;
+    margin-bottom: 50px;
+  }
+
+  nav .links ul li {
+    margin-left: 10px;
+  }
+  .header-text-box {
+    margin-top: 50px;
+  }
+  .header-text-box > .header-text {
+    margin-bottom: 60px;
+    color: #ffffff;
+  }
+  .header-text-box > h2 {
+    font-size: 40px;
+  }
+  .header-text-box > h2 > span {
+    font-size: 80px;
+  }
+  .about-me {
+    padding: 5%;
+    margin-bottom: 50px;
+  }
+  .about-info ul {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .skils {
+    margin-bottom: 50px;
+  }
+  .skils .skil-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skils .skil-card-container .skil-card {
+    border: 1px solid skyblue;
+  }
+  footer {
+    padding: 50px 0;
+  }
+  footer .footer {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  footer .footer .footer-left,
+  .footer-right {
+    max-width: 100%;
+  }
+  .footer-right form > button {
+    align-self: center;
+  }
+}
+/* responsive for medium devices  */
+@media screen and (max-width: 1200px) and (min-width: 768.1px) {
+  .hide {
+    display: none;
+  }
+  .container {
+    padding: 0 5%;
+  }
+  header {
+    margin-bottom: 50px;
+  }
+
+  .header-text {
+    color: #ffffff;
+  }
+  .about-me {
+    padding: 5%;
+    margin-bottom: 50px;
+  }
+  .skils {
+    margin-bottom: 50px;
+  }
+  .skils .skil-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skils .skil-card-container .skil-card {
+    border: 1px solid skyblue;
+  }
+
+  footer {
+    padding: 100px 0;
+  }
+  footer .footer {
+    gap: 50px;
+  }
 }
